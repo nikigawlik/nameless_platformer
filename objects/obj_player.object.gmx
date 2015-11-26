@@ -33,15 +33,16 @@ image_speed = 0
 
 //hacky way of doing numbering
 for (var i = 0; i &lt; instance_number(obj_player); i++)
+{
+    if id == instance_find(obj_player, i)
     {
-        if id == instance_find(obj_player, i)
-        {
-            number = i   
-            break;
-        }
+        number = i   
+        break;
     }
+}
 
-name = "player_" + string(number)
+//name = "player_" + string(number)
+name = get_name()
 </string>
           </argument>
         </arguments>

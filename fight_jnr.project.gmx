@@ -6,13 +6,7 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprites name="player">
-      <sprite>sprites\spr_player</sprite>
-      <sprite>sprites\spr_player_idle</sprite>
-    </sprites>
     <sprite>sprites\spr_wall</sprite>
-    <sprite>sprites\spr_bullet</sprite>
-    <sprite>sprites\spr_turret</sprite>
     <sprite>sprites\spr_sword</sprite>
     <sprite>sprites\spr_water</sprite>
     <sprite>sprites\spr_crate</sprite>
@@ -21,19 +15,14 @@
     <sprite>sprites\spr_32</sprite>
     <sprite>sprites\spr_c_32</sprite>
     <sprite>sprites\spr_spark</sprite>
-    <sprite>sprites\useless_sprite</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\speed_ld.gml</script>
     <script>scripts\input_p1.gml</script>
-    <script>scripts\input_dyn_AI.gml</script>
-    <script>scripts\do_nothing.gml</script>
-    <script>scripts\merge_genes.gml</script>
     <script>scripts\get_name.gml</script>
-    <script>scripts\input_ai1.gml</script>
-    <script>scripts\input_sequence.gml</script>
+    <script>scripts\do_nothing.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_h1</font>
@@ -51,18 +40,10 @@
     <object>objects\obj_jumpable</object>
     <object>objects\obj_spike</object>
     <object>objects\obj_player</object>
-    <object>objects\obj_AI1</object>
-    <object>objects\obj_recorder</object>
-    <object>objects\obj_copyguy</object>
     <object>objects\obj_game_state</object>
-    <object>objects\useless_object</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room3</room>
-    <room>rooms\room5</room>
-    <room>rooms\room6</room>
-    <room>rooms\room7</room>
-    <room>rooms\room8</room>
   </rooms>
   <constants number="8">
     <constant name="key_left">ord('A')</constant>

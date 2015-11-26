@@ -182,7 +182,7 @@ physics_fixture_delete(fix)
             <string>draw_self()
 //draw_text(x, y, string(col_group))
 
-physics_draw_debug()
+//physics_draw_debug()
 </string>
           </argument>
         </arguments>

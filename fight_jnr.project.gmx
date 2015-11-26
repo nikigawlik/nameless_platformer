@@ -21,6 +21,7 @@
     <sprite>sprites\spr_32</sprite>
     <sprite>sprites\spr_c_32</sprite>
     <sprite>sprites\spr_spark</sprite>
+    <sprite>sprites\useless_sprite</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -54,6 +55,7 @@
     <object>objects\obj_recorder</object>
     <object>objects\obj_copyguy</object>
     <object>objects\obj_game_state</object>
+    <object>objects\useless_object</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room3</room>

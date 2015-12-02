@@ -3,8 +3,8 @@
   <caption></caption>
   <width>1024</width>
   <height>768</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>16</vsnap>
+  <hsnap>16</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -18,7 +18,7 @@
     <isSet>-1</isSet>
     <w>1024</w>
     <h>600</h>
-    <showGrid>-1</showGrid>
+    <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
     <showBackgrounds>-1</showBackgrounds>
@@ -26,8 +26,8 @@
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
-    <page>1</page>
-    <xoffset>-94</xoffset>
+    <page>0</page>
+    <xoffset>151</xoffset>
     <yoffset>-71</yoffset>
   </makerSettings>
   <backgrounds>
@@ -51,16 +51,18 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_wall" x="-32" y="672" name="inst_18E79028" locked="0" code="" scaleX="34" scaleY="4" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="-32" y="-32" name="inst_1A8A92EE" locked="0" code="" scaleX="2" scaleY="23" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="992" y="-32" name="inst_9FA66A42" locked="0" code="" scaleX="2" scaleY="23" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="-32" y="-32" name="inst_7F45FA4B" locked="0" code="" scaleX="34" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sword" x="192" y="640" name="inst_4AA15EE5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sword" x="832" y="640" name="inst_C0D66654" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="180"/>
-    <instance objName="obj_parallax_effect" x="128" y="96" name="inst_A34E4C96" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ctrl" x="-160" y="352" name="inst_6B768DE2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player" x="128" y="640" name="inst_04C88800" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player" x="896" y="640" name="inst_AFDC0706" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player" x="262" y="560" name="inst_1EC98D50" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="-32" y="608" name="inst_D7A810E8" locked="0" code="" scaleX="34" scaleY="5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="-32" y="-32" name="inst_D72DD730" locked="0" code="" scaleX="3" scaleY="22" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="992" y="-32" name="inst_3261303D" locked="0" code="" scaleX="2" scaleY="20" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="-32" y="-32" name="inst_C6249880" locked="0" code="" scaleX="34" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_parallax_effect" x="480" y="264" name="inst_16DECFEF" locked="0" code="color = $00bbbb&#xA;trans = -0.02&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_crate" x="714" y="544" name="inst_7A887B0C" locked="0" code="" scaleX="16.1900005340576" scaleY="0.967741906642914" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="698" y="608" name="inst_7265E6F8" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="42"/>
+    <instance objName="obj_crate" x="910" y="112" name="inst_EFD88D78" locked="0" code="" scaleX="4.8125" scaleY="4.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="498" y="608" name="inst_D6F93633" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="42"/>
+    <instance objName="obj_crate" x="462" y="512" name="inst_24B8E454" locked="0" code="" scaleX="0.75" scaleY="0.774193525314331" colour="4294967295" rotation="-5"/>
+    <instance objName="obj_wall" x="608" y="112" name="inst_0B169FDA" locked="0" code="" scaleX="1" scaleY="1.54838705062866" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>-1</PhysicsWorld>

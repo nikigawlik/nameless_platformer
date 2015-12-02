@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>floatiness = 2
+            <string>floatiness = 2/2
 phy_fixed_rotation = 1
 </string>
           </argument>

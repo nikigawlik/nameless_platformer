@@ -33,12 +33,13 @@ fixture = -1
 owner = noone
 holder = noone
 
+init_set_image_from_angle_speed()
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_sword">
+    <event eventtype="4" ename="obj_raft">
       <action>
         <libid>1</libid>
         <id>605</id>
@@ -94,6 +95,28 @@ if holder == noone &amp;&amp; col_group = 0 &amp;&amp; phy_speed &lt; 1
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="obj_sword">
+      <action>
+        <libid>1</libid>
+        <id>605</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string></string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="7" enumb="10">
       <action>
         <libid>1</libid>
@@ -115,6 +138,8 @@ if holder == noone &amp;&amp; col_group = 0 &amp;&amp; phy_speed &lt; 1
     physics_remove_fixture(self, fixture)
 
 var fix = physics_fixture_create();
+
+//physics_fixture_set_awake(fix, 0)
 
 physics_fixture_set_polygon_shape(fix)
 
@@ -179,7 +204,15 @@ physics_fixture_delete(fix)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_self()
+            <string>set_image_from_angle_speed(9)
+
+
+draw_self()
+
+//draw_sprite_ext(spr_whoosh, 0, x, y, 1, 1, prev_angle, -1, 0.5)
+
+prev_angle = image_angle
+
 //draw_text(x, y, string(col_group))
 
 //physics_draw_debug()

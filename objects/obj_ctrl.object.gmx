@@ -33,32 +33,33 @@ part_system_depth(partsys, -9)
 p_spark = part_type_create()
 //part_type_shape(p_spark, pt_shape_pixel)
 part_type_sprite(p_spark, spr_spark, 0, 1, 1)
-part_type_gravity(p_spark, 1, 270)
-part_type_life(p_spark, 1, 20)
+part_type_gravity(p_spark, 1/2, 270)
+part_type_life(p_spark, 1, 20/2)
 part_type_alpha3(p_spark, 1, 1, 0)
 part_type_direction(p_spark, 0, 360, 0, 0)
-part_type_speed(p_spark, 3, 10, 0, 0)
+part_type_speed(p_spark, 3/2, 10/2, 0, 0)
 part_type_colour1(p_spark, c_yellow)
 
 p_crate_deb = part_type_create()
 part_type_shape(p_crate_deb, pt_shape_square)
 part_type_scale(p_crate_deb, 0.25, 0.25)
-part_type_gravity(p_crate_deb, 1, 270)
-part_type_life(p_crate_deb, 5, 10)
+part_type_gravity(p_crate_deb, 1/2, 270)
+part_type_life(p_crate_deb, 5/2, 10/2)
 part_type_alpha2(p_crate_deb, 1, 0)
 part_type_direction(p_crate_deb, 0, 360, 0, 0)
-part_type_speed(p_crate_deb, 10, 12, 0, 0)
+part_type_speed(p_crate_deb, 10/2, 12/2, 0, 0)
 part_type_colour1(p_crate_deb, $00bbbb)
 
 p_blood = part_type_create()
 part_type_shape(p_blood, pt_shape_disk)
-part_type_scale(p_blood, 0.5, 0.5)
+part_type_scale(p_blood, 1, 1)
 part_type_blend(p_blood, 1)
-part_type_gravity(p_blood, 1, 270)
-part_type_life(p_blood, 10, 5)
-part_type_alpha3(p_blood, 0.6, 0.5, 0)
+part_type_gravity(p_blood, .2, 270)
+part_type_life(p_blood, 20, 5)
+//part_type_alpha3(p_blood, 0.6, 0.5, 0)
+part_type_size(p_blood, 1, 0.5, -0.07, 0)
 part_type_direction(p_blood, 0, 360, 0, 0)
-part_type_speed(p_blood, 1, 12, 0, 0)
+part_type_speed(p_blood, 1, 7, 0, 0)
 part_type_colour1(p_blood, c_red)
 
 p_smoke = part_type_create()
@@ -97,6 +98,30 @@ d3d_transform_add_translation(1, 1, 0)
 draw_set_color(c_black)
 with all physics_draw_debug()
 d3d_transform_set_identity()
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="115">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>window_set_fullscreen(!window_get_fullscreen())
+
 </string>
           </argument>
         </arguments>

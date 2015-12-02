@@ -26,8 +26,13 @@
           <argument>
             <kind>1</kind>
             <string>state = "fight";
+/*
+states:
+  - fight
+  - game_over
+*/
 
-fade_time = 120
+fade_time = 60
 </string>
           </argument>
         </arguments>
@@ -134,7 +139,7 @@ switch state
     break
     case "game_over": 
         text = "GAME OVER" 
-        if winner != noone
+        if instance_exists(winner)
             text = "WINNER: " + winner.name
         else
             text = "DRAW"

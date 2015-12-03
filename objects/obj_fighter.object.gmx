@@ -89,6 +89,8 @@ sword= noone
             <string>part_particles_create(partsys, x, y, p_blood, 50)
 if instance_exists(sword)
     sword.holder = noone
+    
+sleep(50)
 </string>
           </argument>
         </arguments>

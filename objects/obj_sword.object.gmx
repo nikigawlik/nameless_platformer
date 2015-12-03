@@ -154,6 +154,7 @@ physics_fixture_add_point(fix, 0, 0)
 
 physics_fixture_set_density(fix, .2)
 physics_fixture_set_collision_group(fix, col_group)
+physics_fixture_set_restitution(fix, .25)
 
 fixture = physics_fixture_bind(fix, self)
 

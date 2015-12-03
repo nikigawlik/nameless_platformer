@@ -25,6 +25,7 @@
     <script>scripts\get_name.gml</script>
     <script>scripts\do_nothing.gml</script>
     <script>scripts\set_image_from_angle_speed.gml</script>
+    <script>scripts\sleep.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_h1</font>
@@ -47,10 +48,10 @@
     <object>objects\obj_parallax_effect</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room1</room>
-    <room>rooms\room4</room>
-    <room>rooms\room3</room>
     <room>rooms\room2</room>
+    <room>rooms\room4</room>
+    <room>rooms\room1</room>
+    <room>rooms\room3</room>
   </rooms>
   <constants number="8">
     <constant name="key_left">ord('A')</constant>
